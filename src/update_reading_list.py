@@ -4,5 +4,5 @@ import requests
 url = input(r'enter url: ')
 page = requests.get(url)
 soup = BeautifulSoup(page.text,'html.parser')
-title = soup.title
+title = soup.title.text
 print(title)
