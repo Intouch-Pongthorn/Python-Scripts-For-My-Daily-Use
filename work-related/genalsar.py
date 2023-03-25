@@ -6,8 +6,8 @@ from glob import glob
 import datetime
 
 def main():
-    #path to the sar folder
-    path = arg[1]
+    #path to the sar folder recieved from command-line 1st arg
+    path = os.path.abspath(str(arg[1]))
     #get only sarxx files from the directory
     sar_files = get_sar_files(path)
 
