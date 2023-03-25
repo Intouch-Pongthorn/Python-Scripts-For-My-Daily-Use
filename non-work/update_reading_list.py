@@ -21,7 +21,7 @@ def get_title(url:str)->str:
     return title
 
 def write_note(title:str,url:str)->None:
-    #if 
+    #opens the text file in from the location.if the file doesn't exist,it'll be automatically created.
     with open(location_path,"a") as file:
         file.write("\n")
         file.write(f"title: {title} ")
