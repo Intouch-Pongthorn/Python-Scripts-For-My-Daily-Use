@@ -43,5 +43,5 @@ def get_sar_files(path:str)->list[str]:
     
     return files_list
 
-
-main()
+if __name__ = '__main__':
+    main()
